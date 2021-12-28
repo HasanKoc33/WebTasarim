@@ -21,3 +21,4 @@
 
 # Proje notları 
  sayfalar klasöründeki gezegen.html ler index html sayfasında en alta yansıtılacak
+ hasan koç ben detay sayfası olarak sadece güneşi tasarladım sayfalr klasöründe sun.html kopyalannıp gezegen isminde (ing).html dosyaları oluşturulup içerikler ona göre düzenlenecek
