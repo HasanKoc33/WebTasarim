@@ -15,7 +15,28 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block; }
 
 body {
-  line-height: 1; }
+  line-height: 1;
+ 
+}
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #ff0606; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(207, 15, 15); 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(236, 5, 5); 
+}
 
 ol, ul {
   list-style: none; }
@@ -1165,7 +1186,7 @@ h1 span, #navbar h1 a {
   font-size: 14px;
   text-align: center;
   color: rgba(255, 255, 255, 0.5); }
-}
+
 
 #navbar, #controls, #data {
   background: rgba(0, 0, 0, 0.4); }
@@ -1206,7 +1227,7 @@ h1 span, #navbar h1 a {
 
 #data, #controls {
   z-index: 99;
-  position: fixed;
+  position: inherit;
   opacity: 1;
   top: 49px;
   padding: 16px; }
@@ -1471,8 +1492,8 @@ body {
     top: 12px; }
 
   #data {
-    position: fixed;
-    top: inherit;
+    position: inherit;
+    top: inherit ;
     bottom: 0;
     width: 100%;
     text-align: center; }
