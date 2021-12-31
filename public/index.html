@@ -1,89 +1,175 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Güneş Sistemi</title>
+    <link rel="stylesheet" href="tasarim.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body class="opening hide-UI view-2D zoom-large data-close controls-close" style="overflow: hidden;">
 
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/9.6.1/firebase-app-compat.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/9.6.1/firebase-auth-compat.js"></script>
-    <script defer src="/__/firebase/9.6.1/firebase-database-compat.js"></script>
-    <script defer src="/__/firebase/9.6.1/firebase-firestore-compat.js"></script>
-    <script defer src="/__/firebase/9.6.1/firebase-functions-compat.js"></script>
-    <script defer src="/__/firebase/9.6.1/firebase-messaging-compat.js"></script>
-    <script defer src="/__/firebase/9.6.1/firebase-storage-compat.js"></script>
-    <script defer src="/__/firebase/9.6.1/firebase-analytics-compat.js"></script>
-    <script defer src="/__/firebase/9.6.1/firebase-remote-config-compat.js"></script>
-    <script defer src="/__/firebase/9.6.1/firebase-performance-compat.js"></script>
-    <!-- 
-      initialize the SDK after all desired features are loaded, set useEmulator to false
-      to avoid connecting the SDK to running emulators.
-    -->
-    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
-
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
-      }
-    </style>
-  </head>
-  <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar sticky-top" style="background-color: black;">
+    <a class="navbar-brand" href="index.html">Güneş Sistemi</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+      <ul class="navbar-nav">
+      
+        <li class="nav-item">
+          <a class="nav-link" href="sayfalar/sun.html" style="color: ghostwhite;">Güneş</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="sayfalar/mercury.html" style="color: ghostwhite;">Merkür</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="sayfalar/venus.html" style="color: ghostwhite;">Venüs</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="sayfalar/earth.html" style="color: ghostwhite;">Dünya</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="sayfalar/mars.html" style="color: ghostwhite;">Mars</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="sayfalar/jupiter.html" style="color: ghostwhite;">Jübiter</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="sayfalar/saturn.html" style="color: ghostwhite;">Satürn</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="sayfalar/uranus.html" style="color: ghostwhite;">Üranüs</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="sayfalar/neptune.html" style="color: ghostwhite;">Neptün</a>
+        </li>
+      </ul>
     </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
+  </nav>
+  
 
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const loadEl = document.querySelector('#load');
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.firestore().doc('/foo/bar').get().then(() => { });
-        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        // firebase.analytics(); // call to activate
-        // firebase.analytics().logEvent('tutorial_completed');
-        // firebase.performance(); // call to activate
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+    <div id="universe" class="scale-stretched">
+      <div id="galaxy">
+        <div id="solar-system" class="earth">
+          <div id="mercury" class="orbit">
+            <div class="pos">
+              <div class="planet">
+                <dl class="infos">
+                  <dt>Mercury</dt>
+                  <dd><span></span></dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+          <div id="venus" class="orbit">
+            <div class="pos">
+              <div class="planet">
+                <dl class="infos">
+                  <dt>Venus</dt>
+                  <dd><span></span></dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+          <div id="earth" class="orbit">
+            <div class="pos">
+              <div class="orbit">
+                <div class="pos">
+                  <div class="moon"></div>
+                </div>
+              </div>
+              <div class="planet">
+                <dl class="infos">
+                  <dt>Earth</dt>
+                  <dd><span></span></dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+          <div id="mars" class="orbit">
+            <div class="pos">
+              <div class="planet">
+                <dl class="infos">
+                  <dt>Mars</dt>
+                  <dd><span></span></dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+          <div id="jupiter" class="orbit">
+            <div class="pos">
+              <div class="planet">
+                <dl class="infos">
+                  <dt>Jupiter</dt>
+                  <dd><span></span></dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+          <div id="saturn" class="orbit">
+            <div class="pos">
+              <div class="planet">
+                <div class="ring"></div>
+                <dl class="infos">
+                  <dt>Saturn</dt>
+                  <dd><span></span></dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+          <div id="uranus" class="orbit">
+            <div class="pos">
+              <div class="planet">
+                <dl class="infos">
+                  <dt>Uranus</dt>
+                  <dd><span></span></dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+          <div id="neptune" class="orbit">
+            <div class="pos">
+              <div class="planet">
+                <dl class="infos">
+                  <dt>Neptune</dt>
+                  <dd><span></span></dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+          <div id="sun">
+            <dl class="infos">
+              <dt>Sun</dt>
+              <dd><span></span></dd>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </div>
 
-        try {
-          let app = firebase.app();
-          let features = [
-            'auth', 
-            'database', 
-            'firestore',
-            'functions',
-            'messaging', 
-            'storage', 
-            'analytics', 
-            'remoteConfig',
-            'performance',
-          ].filter(feature => typeof app[feature] === 'function');
-          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
-        }
-      });
+<div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="gorseller/jubiterS2.jpg" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+    
+    
+   <script src="animasyon.js"></script> 
+   <script src="kodlar.js"></script> 
+   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+    if (typeof jQuery == 'undefined') { 
+      document.write(unescape("%3Cscript src='js/jquery.min.js' type='text/javascript'%3E%3C/script%3E"));
+    }
     </script>
+    
   </body>
 </html>
+
