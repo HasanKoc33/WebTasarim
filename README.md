@@ -19,6 +19,5 @@
 ![detay sayfası](https://raw.githubusercontent.com/HasanKoc33/WebTasarim/main/gorseller/Ekran%20Al%C4%B1nt%C4%B1sa%C4%B1.JPG)
 
 
-# Proje notları 
- sayfalar klasöründeki gezegen.html ler index html sayfasında en alta yansıtılacak
- hasan koç ben detay sayfası olarak sadece güneşi tasarladım sayfalr klasöründe sun.html kopyalannıp gezegen isminde (ing).html dosyaları oluşturulup içerikler ona göre düzenlenecek
+# Proje Tamamlanmıştır
+ [projenin çalışır haline buradan ulaşabilirsiniz](https://solarsystem-55bfa.web.app)
